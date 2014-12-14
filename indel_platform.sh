@@ -12,98 +12,98 @@ sudo mkdir -p $program_dir
 
 ###################################################
 #get SIP
-if [ -z $indel_platform/sip-4.15.3.tar.gz ];then
+if [ ! -f $indel_platform/sip-4.15.3.tar.gz ];then
     wget -P $indel_platform/ http://cznic.dl.sourceforge.net/project/pyqt/sip/sip-4.15.3/sip-4.15.3.tar.gz
 fi
 
 #get gnuplot
-if [ -z $indel_platform/gnuplot-4.6.3.tar.gz ];then
+if [ ! -f $indel_platform/gnuplot-4.6.3.tar.gz ];then
     wget -P $indel_platform/ http://heanet.dl.sourceforge.net/project/gnuplot/gnuplot/4.6.3/gnuplot-4.6.3.tar.gz
 fi
 
 #get MUMmer3
-if [ -z $indel_platform/MUMmer3.23.tar.gz ];then
+if [ ! -f $indel_platform/MUMmer3.23.tar.gz ];then
     wget -P $indel_platform/  http://nchc.dl.sourceforge.net/project/mummer/mummer/3.23/MUMmer3.23.tar.gz
 fi
 
 #get bwa
-if [ -z $indel_platform/bwa-0.7.5a.tar.bz2 ];then
+if [ ! -f $indel_platform/bwa-0.7.5a.tar.bz2 ];then
     wget  -P $indel_platform/ http://cznic.dl.sourceforge.net/project/bio-bwa/bwa-0.7.5a.tar.bz2
 fi
 
 #get samtools
-if [ -z $indel_platform/samtools-0.1.19.tar.bz2 ];then
+if [ ! -f $indel_platform/samtools-0.1.19.tar.bz2 ];then
     wget -P $indel_platform/ http://heanet.dl.sourceforge.net/project/samtools/samtools/0.1.19/samtools-0.1.19.tar.bz2
 fi
 
 #get zlib for samtools
-if [ -z $indel_platform/zlib-1.2.8.tar.gz ];then
+if [ ! -f $indel_platform/zlib-1.2.8.tar.gz ];then
     wget  -P $indel_platform/ http://heanet.dl.sourceforge.net/project/libpng/zlib/1.2.8/zlib-1.2.8.tar.gz
 fi
 
 #install GNU ncurses library
-if [ -z $indel_platform/ncurses-5.9.tar.gz ];then
+if [ ! -f $indel_platform/ncurses-5.9.tar.gz ];then
     wget -P $indel_platform/ http://ftp.gnu.org/pub/gnu/ncurses/ncurses-5.9.tar.gz
 fi
 
 #get pindel-0.2.4t
-if [ -z $indel_platform/pindel-0.2.4t ];then
+if [ ! -f $indel_platform/pindel-0.2.4t ];then
     wget -O $indel_platform/pindel-0.2.4t https://codeload.github.com/genome/pindel/zip/ubuntu/lucid/0.2.4t
 fi
 
 #get primer3
-if [ -z $indel_platform/primer3-1.1.4.tar.gz ];then
+if [ ! -f $indel_platform/primer3-1.1.4.tar.gz ];then
     wget -P $indel_platform/ http://nchc.dl.sourceforge.net/project/primer3/primer3/1.1.4/primer3-1.1.4.tar.gz 
 fi
 
 #get BioPerl
-if [ -z $indel_platform/BioPerl-1.6.901.tar.gz ];then
+if [ ! -f $indel_platform/BioPerl-1.6.901.tar.gz ];then
     wget -P $indel_platform/ http://www.cpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-1.6.901.tar.gz
 fi
 
 #get MFEprimer
-if [ -z $indel_platform/MFEprimer2.0 ];then
+if [ ! -f $indel_platform/MFEprimer2.0 ];then
     wget -O $indel_platform/MFEprimer2.0 https://codeload.github.com/quwubin/MFEprimer/legacy.zip/master
 fi
 
 #get pypy (binary)
-if [ -z $indel_platform/pypy-2.2.1-linux64.tar.bz2 ];then
+if [ ! -f $indel_platform/pypy-2.2.1-linux64.tar.bz2 ];then
     wget -P $indel_platform/  https://bitbucket.org/pypy/pypy/downloads/pypy-2.2.1-linux64.tar.bz2
 fi
 
 #get psutil
-if [ -z $indel_platform/psutil-1.2.1.tar.gz ];then
+if [ ! -f $indel_platform/psutil-1.2.1.tar.gz ];then
     wget -P $indel_platform/  https://pypi.python.org/packages/source/p/psutil/psutil-1.2.1.tar.gz
 fi
 
 
 #get trimmomatic
-if [ -z $indel_platform/Trimmomatic-0.32.zip ];then
+if [ ! -f $indel_platform/Trimmomatic-0.32.zip ];then
     wget -P $indel_platform/ http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.32.zip
 fi
 
 #get fastqc
-if [ -z $indel_platform/fastqc_v0.11.2.zip ];then
+if [ ! -f $indel_platform/fastqc_v0.11.2.zip ];then
     wget -P $indel_platform/ http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.2.zip
 fi
 
 #get qualimap
-if [ -z $indel_platform/qualimap_v2.0.zip ];then
+if [ ! -f $indel_platform/qualimap_v2.0.zip ];then
     wget -P $indel_platform/ http://qualimap.bioinfo.cipf.es/release/qualimap_v2.0.zip
 fi
 
 #get libxml2
-if [ -z $indel_platform/libxml2-sources-2.9.2.tar.gz ];then
+if [ ! -f $indel_platform/libxml2-sources-2.9.2.tar.gz ];then
     wget -P $indel_platform/ ftp://xmlsoft.org/libxml2/libxml2-sources-2.9.2.tar.gz
 fi
 
 #get R-3
-if [ -z $indel_platform/R-3.1.2.tar.gz ];then
+if [ ! -f $indel_platform/R-3.1.2.tar.gz ];then
     wget -P $indel_platform/ http://cran.rstudio.com/src/base/R-3/R-3.1.2.tar.gz
 fi
 
 #get LONI_NGS
-if [ -z $indel_platform/LONI_NGS.tar.gz ] || [ -z $indel_platform/LONI_NGS.zip ];then
+if [ ! -f $indel_platform/LONI_NGS.tar.gz ] || [ ! -f $indel_platform/LONI_NGS.zip ];then
     wget -P $indel_platform/ http://202.120.45.71/system/download/LONI_NGS.tar.gz
     wget -O $indel_platform/LONI_NGS.zip https://github.com/lv06025158/InDel-Markers-Development-Platform/archive/master.zip
 fi
